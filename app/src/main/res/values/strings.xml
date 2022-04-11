@@ -2,11 +2,40 @@
     <string name="app_name">My Aull</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">My Aull Birthday</string>
+    <string name="second_fragment_label">My Aull Birthday</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="wording_1">Pertama kali kerumah</string>
+    <string name="wording_2">Diem-diem aa fotoin eneng</string>
+    <string name="wording_3">Pertama ngenalin eneng</string>
+    <string name="wording_4">Ngedate pertama? wkwk</string>
+    <string name="wording_5">Azeek perdana foto sama mamah camer</string>
+    <string name="wording_6">Akhirnya ngedate ke dua haha. Lanjut nih wkkw</string>
+    <string name="wording_7">Aku kenalin ke sodara di bandung</string>
+    <string name="wording_8">Pengen dikenalin ke bogor juga kann?</string>
+    <string name="wording_9">Seneng banget bu dapet sirsak</string>
+    <string name="wording_10">Hilal restu mulai terlihat wkwk</string>
+    <string name="wording_11">Azeek mulai full restu bogor</string>
+    <string name="wording_12">Ngedate ketiga? wkwk</string>
+    <string name="wording_13">Pengen di temenin sama aa katanya</string>
+    <string name="wording_14">Belanja selfie di maal</string>
+    <string name="wording_15">Beli parcel dadakan</string>
+    <string name="wording_16">Ujug-ujug lamaran yak hahaa</string>
+    <string name="wording_17">Mulai seneng banget klo selfie berdua</string>
+    <string name="wording_18">Daftar KUA Bogor</string>
+    <string name="wording_19">Eneng TTD wkkw</string>
+    <string name="wording_20">Shopping seserahan HAHA</string>
+    <string name="wording_21">Aciee ngapain nih?</string>
+    <string name="wording_22">Aduh udh foto biru aja :)</string>
+    <string name="wording_23">Pengen MCD Ngambek Manyun :p</string>
+    <string name="wording_24">Seneng banget daftar KUA CKP </string>
+    <string name="wording_25">Azekk gaya prewed euy haha</string>
+    <string name="wording_26">Ala-ala monochrome kesampean</string>
+    <string name="wording_27">22 Mei 2022... mau foto apa disini?</string>
+
+
 </resources>

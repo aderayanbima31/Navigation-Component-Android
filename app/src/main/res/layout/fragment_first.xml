@@ -14,17 +14,41 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@id/anim_box" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/textview_first"
+        android:id="@+id/anim_party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/anim_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:lottie_url="https://assets1.lottiefiles.com/packages/lf20_prpslttf.json"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
         app:lottie_url="https://assets3.lottiefiles.com/private_files/lf30_smtnx4ug.json"
-        app:lottie_loop="true"
+        app:lottie_loop="false"
+        android:layout_marginTop="88dp"
         app:layout_constraintBottom_toTopOf="@id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/anim_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Make a wish ya neng:)"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

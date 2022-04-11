@@ -1,5 +1,6 @@
 package com.derayanbimaa.myaull
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+    private var mediaPlayer: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +31,11 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Dengerin aa neng wkwk", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+            playSong(R.raw.ucapan_bima)
         }
+        playSong(R.raw.aullbirthday)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -54,5 +58,10 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
             || super.onSupportNavigateUp()
+    }
+
+    private fun playSong(audio: Int){
+        mediaPlayer = MediaPlayer.create(this, audio)
+        mediaPlayer?.start()
     }
 }

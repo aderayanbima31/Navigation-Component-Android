@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.derayanbimaa.myaull.data.DataSource
 import com.derayanbimaa.myaull.databinding.FragmentSecondBinding
 
 /**
@@ -34,6 +36,12 @@ class SecondFragment : Fragment() {
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+        }
+
+        val dataSetFoto = DataSource().loadFotos()
+        binding.rvFoto.apply {
+            adapter = ItemAdapter(requireContext(), dataSetFoto)
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         }
     }
 
